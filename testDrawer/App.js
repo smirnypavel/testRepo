@@ -12,13 +12,13 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false }}>
         <Drawer.Screen
-          name="Feed"
-          component={Feed}
+          name="Article"
+          component={Article}
           options={{ drawerPosition: "right" }}
         />
         <Drawer.Screen
-          name="Article"
-          component={Article}
+          name="Feed"
+          component={Feed}
           options={{ drawerPosition: "right" }}
         />
       </Drawer.Navigator>

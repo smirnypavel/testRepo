@@ -1,5 +1,6 @@
 import { Text, View, StyleSheet } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+// import { TouchableOpacity } from "react-native-gesture-handler";
+import { ButtonAdd } from "./components/Button/Buttons";
 
 export default function Article() {
   return (
@@ -7,9 +8,7 @@ export default function Article() {
       <View style={styles.containerOne}>
         <View style={styles.textView}>
           <Text style={styles.text}>Hello Article</Text>
-          <TouchableOpacity>
-            <Text style={styles.qqqq}>Hello Article</Text>
-          </TouchableOpacity>
+          <ButtonAdd />
         </View>
       </View>
       <View style={styles.containerTwo}>
@@ -23,41 +22,26 @@ export default function Article() {
 const styles = StyleSheet.create({
   textView: {
     marginTop: 100,
-    marginLeft: 50
+    marginLeft: 50,
   },
   container: {
     flex: 1,
-    backgroundColor: "yellow"
+    backgroundColor: "yellow",
   },
   containerOne: {
     flex: 1,
-    backgroundColor: "darkblue"
+    backgroundColor: "darkblue",
   },
   containerTwo: {
     flex: 1,
-    backgroundColor: "red"
+    backgroundColor: "red",
   },
   text: {
-    color: "white"
+    color: "white",
   },
-  qqqq: {
-    // flex: 1,
 
-    marginTop: 100,
-    marginLeft: 50,
-    backgroundColor: "wheat",
-    color: "black",
-    textAlign: "center",
-    // alignItems: "center",
-    width: 100,
-    height: 50,
-    borderRadius: 5,
-    lineHeight: 50
-    // justifyContent: "center",
-    // alignItems: "center"
-  },
   buttonText: {
     flex: 1,
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 });
