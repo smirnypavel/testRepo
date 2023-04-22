@@ -41,14 +41,23 @@ const styles = StyleSheet.create({
     color: "white"
   },
   qqqq: {
+    // flex: 1,
+
     marginTop: 100,
     marginLeft: 50,
-    backgroundColor: "red",
-    color: "white",
+    backgroundColor: "wheat",
+    color: "black",
+    textAlign: "center",
+    // alignItems: "center",
     width: 100,
     height: 50,
-    borderRadius: 25,
-    justifyContent: "center",
-    alignItems: "center"
+    borderRadius: 5,
+    lineHeight: 50
+    // justifyContent: "center",
+    // alignItems: "center"
+  },
+  buttonText: {
+    flex: 1,
+    justifyContent: "center"
   }
 });
