@@ -12,10 +12,10 @@ export default function Feed() {
 const styles = StyleSheet.create({
   text: {
     marginTop: 100,
-    marginLeft: 50,
+    marginLeft: 50
   },
   container: {
     flex: 1,
-    backgroundColor: "yellow",
-  },
+    backgroundColor: "yellow"
+  }
 });
