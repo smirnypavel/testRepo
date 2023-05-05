@@ -1,17 +1,20 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  buttonww: {
+  button: {
     marginTop: 100,
     marginLeft: 50,
-    backgroundColor: "wheat",
-    color: "black",
-    textAlign: "center",
-    width: 100,
+    width: 50,
     height: 50,
-    borderRadius: 5,
-    lineHeight: 50,
+    borderRadius: 25,
+    overflow: "hidden",
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center"
   },
+  buttonText: {
+    color: "black",
+    fontSize: 30,
+    fontWeight: "400"
+  }
 });
-
-// export default styles;

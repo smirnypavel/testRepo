@@ -1,12 +1,12 @@
 import { Text, TouchableOpacity } from "react-native";
 // import { TouchableOpacity } from "react-native-gesture-handler";
-import { styles } from "./ButtonStyle";
+import { styles } from "./StylesAddingButton";
 
-export const ButtonAdd = () => {
+export const AddingButton = () => {
   return (
     <TouchableOpacity>
-      <Text style={styles.buttonww}>+</Text>
+      <Text style={styles.addingButton}>+</Text>
     </TouchableOpacity>
   );
 };
-export default ButtonAdd;
+export default AddingButton;
