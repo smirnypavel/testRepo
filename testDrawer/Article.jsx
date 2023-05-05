@@ -130,8 +130,8 @@
 // });
 
 import React from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
-import { Feather } from "@expo/vector-icons";
+import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
+// import { Feather } from "@expo/vector-icons";
 
 export default function Article() {
   return (
@@ -161,7 +161,7 @@ export default function Article() {
         </View>
       </View>
       <View style={styles.bottomContainer}>
-        <TouchableOpacity style={styles.button}>
+        {/* <TouchableOpacity style={styles.button}>
           <Feather name="minus" size={24} color="black" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.statsButton}>
@@ -171,6 +171,24 @@ export default function Article() {
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
           <Feather name="plus" size={24} color="black" />
+        </TouchableOpacity> */}
+        <TouchableOpacity style={styles.button}>
+          <View style={styles.buttonIconContainer}>
+            <Image style={styles.buttonIcon} source={require("./images/555.png")} />
+          </View>
+          <Text style={styles.buttonText}>Button 1</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button}>
+          <View style={styles.buttonIconContainer}>
+            <Image style={styles.buttonIcon} source={require("./images/777.png")} />
+          </View>
+          <Text style={styles.buttonText}>Button 2</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button}>
+          <View style={styles.buttonIconContainer}>
+            <Image style={styles.buttonIcon} source={require("./images/555.png")} />
+          </View>
+          <Text style={styles.buttonText}>Button 3</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -269,13 +287,13 @@ const styles = StyleSheet.create({
   bottomContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    backgroundColor: "#0d6efdff",
+    // backgroundColor: "#0d6efdff",
     padding: 0
   },
   button: {
     backgroundColor: "#ffffff",
     borderRadius: 22,
-    width: 120,
+    width: 200,
 
     padding: 16,
     marginHorizontal: 0,
@@ -284,11 +302,11 @@ const styles = StyleSheet.create({
   statsButton: {
     position: "absolute",
     bottom: 10,
-    left: "37%",
-    backgroundColor: "#ffffff",
+    left: "36%",
+    backgroundColor: "#000",
     borderRadius: 50,
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     paddingHorizontal: 16,
     paddingVertical: 8,
     marginHorizontal: 8
@@ -301,5 +319,33 @@ const styles = StyleSheet.create({
     color: "#0d6efdff",
     fontWeight: "bold",
     marginLeft: 8
+  },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: "#0d6efdff",
+    borderRadius: 10
+  },
+  button: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden"
+  },
+  buttonIconContainer: {
+    backgroundColor: "transparent",
+    padding: 0,
+    borderRadius: 50
+    // marginBottom: 10
+  },
+  buttonIcon: {
+    // position: "absolute",
+    width: 100,
+    height: 100
+  },
+  buttonText: {
+    color: "white"
   }
 });
