@@ -282,8 +282,13 @@ const styles = StyleSheet.create({
     marginVertical: 0
   },
   statsButton: {
+    position: "absolute",
+    bottom: 10,
+    left: "37%",
     backgroundColor: "#ffffff",
-    borderRadius: 8,
+    borderRadius: 50,
+    width: 100,
+    height: 100,
     paddingHorizontal: 16,
     paddingVertical: 8,
     marginHorizontal: 8
